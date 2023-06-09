@@ -1,0 +1,261 @@
+:root {
+  --maincolor: #ff6464;
+  --white: #fff;
+  --darkermain: #fc2947;
+}
+/*nav bar*/
+.navbar {
+  background-color: var(--maincolor);
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.logo {
+  margin-top: 1rem;
+}
+.navbar-text,
+.navbar-brand,
+.nav-link {
+  color: var(--white);
+  font-size: 25px;
+  font-weight: bold;
+}
+.navbar-nav {
+  gap: 3rem;
+}
+.nav-link:hover {
+  color: var(--darkermain);
+}
+/*nav bar*/
+
+/*home*/
+.meow {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.botones{
+  margin-top: 3rem;
+}
+.container-title {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+#title {
+  color: var(--white);
+  background-color: var(--maincolor);
+}
+.btn {
+  background-color: var(--white);
+  color: var(--darkermain);
+  border-color: var(--darkermain);
+}
+.btn:hover {
+  background-color: var(--darkermain);
+}
+
+/*home*/
+
+/*features*/
+.features1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  text-align: center;
+}
+.features-list {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 3rem 3rem 5rem;
+  font-size: larger;
+}
+.list,
+.list1 {
+  list-style: none;
+}
+ul li::before {
+  color: var(--darkermain);
+  font-size: 1.5em;
+  content: "\2023";
+  margin-right: 0.5em;
+}
+strong {
+  color: var(--darkermain);
+}
+/*features*/
+
+/*testimonials*/
+.opinion {
+  font-weight: bold;
+  font-size: 50px;
+}
+.testimonial2 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  background-color: var(--maincolor);
+}
+.carousel {
+  width: 50rem;
+}
+/*testimonials*/
+
+/*pricing*/
+.card-header {
+  color: var(--white);
+  background-color: var(--darkermain);
+}
+.card-title,
+.text-body-secondary {
+  color: var(--maincolor);
+}
+
+.pricing1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  color: black;
+  font-weight: bold;
+}
+#pricing .row {
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+.col {
+  width: 400px;
+}
+#pricing .btn:hover {
+  background-color: var(--darkermain);
+  color: var(--white);
+}
+/*pricing*/
+
+/*footer*/
+#footer {
+  background-color: var(--maincolor);
+  color: var(--white);
+  font-size: 18px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.foot-menu {
+  color: var(--white);
+  text-decoration: none;
+  gap: 2rem;
+}
+
+.foot-menu:hover {
+  color: black;
+}
+/*footer*/
+
+@media (max-width: 767px) {
+  /*nav bar*/
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .navbar-text,
+  .navbar-brand,
+  .nav-link {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .navbar-nav {
+    gap: 1rem;
+  }
+  
+  .logo {
+    margin-top: none;
+    width: 3rem;
+  }
+  .navbar-toggler {
+    color: var(--white);
+  }
+  /*nav bar*/
+
+  /*home*/
+  .main-image {
+    width: 300px;
+    height: 500px;
+  }
+  .meow {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .container-title {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  /*home*/
+
+  /*features*/
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    font-size: medium;
+  }
+  /*features*/
+
+  /*testimonials*/
+  .opinion {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .testimonial2 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    background-color: var(--maincolor);
+  }
+  .carousel {
+    width: 22rem;
+  }
+  /*testimonials*/
+
+  /*pricing*/
+  .col {
+    width: 300px;
+  }
+  /*pricing*/
+
+  /*footer*/
+
+  /*footer*/
+}
